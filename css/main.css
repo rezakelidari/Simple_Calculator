@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 10px;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4rem;
+  gap: 1rem;
+}
+
+.result {
+  font-size: 2.5rem;
+  width: 90%;
+  text-align: right;
+}
+
+.calculator {
+  user-select: none;
+  -webkit-user-drag: none;
+  font-size: 1.5rem;
+  border-spacing: 1rem;
+  border-collapse: separate;
+}
+
+.calculator .calc-button {
+  text-align: center;
+  height: 75px;
+  width: 75px;
+  border-radius: 1000px;
+  transition: 0.3s ease all;
+}
+
+.calculator .calc-button.calc-opt,
+.calculator .calc-button.calc-equal {
+  background: rgba(0, 128, 128, 0.5);
+}
+
+.calculator .calc-button.calc-opt:hover,
+.calculator .calc-button.calc-equal:hover {
+  background: rgba(0, 128, 128, 0.75);
+  box-shadow: 0 0 20px rgba(0, 128, 128, 0.5);
+} 
+
+.calculator .calc-button.calc-fun {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.calculator .calc-button.calc-fun:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.calculator .calc-button.calc-num {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.calculator .calc-button.calc-num:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
